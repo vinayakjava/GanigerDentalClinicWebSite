@@ -2,14 +2,14 @@
 // names are proper names and stay in English in both languages; translatable labels are in the dictionaries.
 
 export const EDUCATION = [
-  { id: "sslc", institution: "KRES High School, Ainapur", years: "2009" },
-  { id: "puc", institution: "SMPU (SDM), Dharwad", years: "2011" },
+  { id: "sslc", institution: "KRES High School, Ainapur", year: "2009" },
+  { id: "puc", institution: "SMPU (SDM), Dharwad", year: "2011" },
   {
     id: "bds",
     institution: "Maratha Mandal's N. G. H. Institute of Dental Sciences & Research Centre, Belgaum",
-    years: "2011–2016",
+    year: "2016",
   },
-  { id: "mds", institution: "Sri Hasanamba Dental College and Hospital, Hassan, Karnataka", years: "2017–2020" },
+  { id: "mds", institution: "Sri Hasanamba Dental College and Hospital, Hassan, Karnataka", year: "2020" },
 ] as const;
 
 export type QualificationId = (typeof EDUCATION)[number]["id"];

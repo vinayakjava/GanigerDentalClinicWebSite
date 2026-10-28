@@ -62,7 +62,7 @@ export default async function AboutPage() {
                 {item.institution}
               </p>
               <p className="mt-2 text-sm text-muted">
-                {dict.about.yearLabel}: <span className="font-semibold text-navy-900">{item.years}</span>
+                {dict.about.yearLabel}: <span className="font-semibold text-navy-900">{item.year}</span>
               </p>
             </li>
           ))}
