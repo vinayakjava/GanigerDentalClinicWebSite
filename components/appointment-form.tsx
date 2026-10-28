@@ -88,6 +88,9 @@ function AppointmentFormBody({ labels, branchNames, callLabel, locale, onReset }
 
   return (
     <form
+      // Remount when the server returns new values: React's automatic form reset would otherwise
+      // clear the <select>, whose default changes in the same commit.
+      key={JSON.stringify(values ?? {})}
       ref={formRef}
       action={formAction}
       noValidate

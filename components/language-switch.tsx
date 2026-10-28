@@ -21,11 +21,10 @@ export function LanguageSwitch({
     <Link
       href={href}
       hrefLang={target}
-      lang={target}
-      aria-label={description}
       className="inline-flex min-h-11 items-center rounded-md border border-line px-3 text-sm font-semibold text-navy-900 hover:bg-brand-50"
     >
-      {label}
+      <span lang={target}>{label}</span>
+      <span className="sr-only"> – {description}</span>
     </Link>
   );
 }

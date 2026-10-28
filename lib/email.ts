@@ -8,15 +8,18 @@ export async function sendAppointmentRequest(
   meta: AppointmentEmailMeta,
 ): Promise<{ ok: boolean }> {
   const { subject, text } = formatAppointmentEmail(request, meta);
+
+  // Local development and automated tests: print instead of sending. Never set this in production.
+  if (process.env.APPOINTMENT_EMAIL_DRY_RUN === "true") {
+    console.info(`[appointment] Dry run, email not sent.\n${subject}\n${text}`);
+    return { ok: true };
+  }
+
   const apiKey = process.env.RESEND_API_KEY;
   const from = process.env.APPOINTMENT_EMAIL_FROM;
   const to = process.env.APPOINTMENT_EMAIL_TO;
 
   if (!apiKey || !from || !to) {
-    if (process.env.NODE_ENV !== "production") {
-      console.info(`[appointment] Email not configured; printing instead.\n${subject}\n${text}`);
-      return { ok: true };
-    }
     console.error("[appointment] Email delivery is not configured", { submissionId: meta.submissionId });
     return { ok: false };
   }

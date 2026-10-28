@@ -42,6 +42,10 @@ export function SiteFooter({ dict, locale }: { dict: Dictionary; locale: Locale 
               <Link className="underline-offset-4 hover:underline" href={localePath(locale, "/privacy")}>
                 {dict.nav.privacy}
               </Link>
+              {" · "}
+              <Link className="underline-offset-4 hover:underline" href={localePath(locale, "/terms")}>
+                {dict.nav.terms}
+              </Link>
             </li>
           </ul>
         </div>

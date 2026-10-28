@@ -26,10 +26,16 @@ npm run lint
 npm run typecheck
 npm test             # Vitest, runs once
 npx vitest run lib/appointment.test.ts -t "Sundays"   # single test
+npm run test:e2e     # Playwright: builds, starts a production server on :3200, runs desktop + mobile projects
+npx playwright test e2e/appointment.spec.ts --project=desktop -g "Kannada"   # single e2e test
 ```
 
-Without `RESEND_API_KEY`/`APPOINTMENT_EMAIL_*` in `.env.local`, `npm run dev` prints submitted requests to the server
-console instead of emailing. In production the same missing config makes the form report a delivery error.
+On this machine Playwright's Chromium download is blocked, so run e2e with the installed Chrome:
+`PLAYWRIGHT_CHANNEL=chrome npm run test:e2e`. Stop any `next dev` for this project first — Next refuses to build/run a
+second server alongside it.
+
+`APPOINTMENT_EMAIL_DRY_RUN=true` prints appointment requests to the server console instead of emailing them (use it in
+`.env.local`; the e2e config sets it). Without it, missing Resend config makes the form report a delivery error.
 
 ## Architecture
 
@@ -42,6 +48,8 @@ API (e.g. `proxy.ts` replaced `middleware.ts`; `dynamicParams` is unavailable wi
   which use `next/root-params` (no prop drilling). Strings live in `app/[lang]/dictionaries/{en,kn}.json`; `kn.json` must
   have exactly the same shape as `en.json` (enforced by the `Dictionary` type). Client components can't use root params,
   so pages pass them the strings they need.
+- Unmatched URLs hit `app/[lang]/[...missing]/page.tsx`, which calls `notFound()` so the localized
+  `app/[lang]/not-found.tsx` renders inside the normal layout.
 - **`proxy.ts`** redirects any path without a locale prefix to `/en/...` (or `/kn/...` when Accept-Language starts with
   `kn`). Its matcher excludes `_next`, `/images/`, icons, `sitemap.xml` and `robots.txt` — add new public paths there.
 - **Clinic facts** (phones, branch ids, closed weekdays, service ids, map queries) are in `lib/clinic.ts`; display text

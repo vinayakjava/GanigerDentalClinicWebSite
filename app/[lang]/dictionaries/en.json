@@ -10,7 +10,9 @@
     "contactTitle": "Contact & Appointment Request",
     "contactDescription": "Addresses, timings and phone numbers for the Athani and Ainapur branches, and an appointment request form.",
     "privacyTitle": "Privacy Notice",
-    "privacyDescription": "How this website handles the information you submit."
+    "privacyDescription": "How this website handles the information you submit.",
+    "termsTitle": "Terms of Use",
+    "termsDescription": "The terms for using this website and its appointment request form."
   },
   "nav": {
     "home": "Home",
@@ -18,6 +20,7 @@
     "services": "Treatments",
     "contact": "Contact",
     "privacy": "Privacy",
+    "terms": "Terms",
     "switchLanguage": "ಕನ್ನಡ",
     "switchLanguageLabel": "View this page in Kannada",
     "skipToContent": "Skip to main content",
@@ -178,6 +181,31 @@
       {
         "heading": "Questions or deletion",
         "body": "To ask about or delete information you have sent, contact the clinic by phone or at drlakki34@gmail.com."
+      }
+    ]
+  },
+  "terms": {
+    "heading": "Terms of Use",
+    "sections": [
+      {
+        "heading": "Appointment requests",
+        "body": "Sending the form on this website is a request for an appointment, not a confirmed booking. Clinic staff will call you on the mobile number you give to confirm a date and time. Please do not come to the clinic for a requested time until it has been confirmed."
+      },
+      {
+        "heading": "Not medical advice",
+        "body": "The information on this website is general and is not a substitute for an examination by a dentist. Please do not rely on it to diagnose or treat a condition. For pain, swelling or an injury, call the clinic directly."
+      },
+      {
+        "heading": "Timings and holidays",
+        "body": "Branch timings are shown as accurately as possible but can change, and the clinic is closed on national holidays. Please call before travelling if you are unsure."
+      },
+      {
+        "heading": "Using this website",
+        "body": "Please send requests only for yourself, or for someone who has agreed to it, and give correct details. Requests that look automated or abusive may be ignored."
+      },
+      {
+        "heading": "Questions",
+        "body": "For any question about these terms, contact the clinic by phone or at drlakki34@gmail.com."
       }
     ]
   },
