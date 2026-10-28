@@ -6,6 +6,25 @@
 
 ---
 
+## Status Summary
+
+### ✅ Confirmed Decisions (3/10)
+1. ✅ Sunday holiday for Ainapur only; Athani operates all 7 days
+2. ✅ Athani: 10 AM - 5 PM; Ainapur: 6 PM - 8:30 PM
+3. ✅ National holidays configurable by admin
+4. ✅ Language support: English and Kannada at launch
+
+### ⏳ Still Required (7/10)
+- [ ] Appointment confirmation model (manual vs. auto-slot)
+- [ ] Appointment slot intervals (15/20/30 min, if applicable)
+- [ ] Contact number(s) and WhatsApp availability
+- [ ] Email notification routing
+- [ ] Admin account creation method
+- [ ] Confirmation email expectations
+- [ ] Kannada translation method (clinic or professional translator)
+
+---
+
 ## Critical Business Rule Decisions
 
 The following items **materially affect implementation** and require explicit clinic input before development begins.
@@ -15,13 +34,15 @@ The following items **materially affect implementation** and require explicit cl
 
 **Impact:** Determines appointment availability calendar, automated slot generation, and holiday exclusion logic.
 
-**Status:** ⏳ **UNRESOLVED** — Awaiting clinic confirmation
+**Status:** ✅ **CONFIRMED**
 
-**Clinic Input Required:**
+**Clinic Confirmation:**
 - [ ] Sunday is a holiday for both branches
-- [ ] Sunday is a holiday for Ainapur only
+- [x] Sunday is a holiday for Ainapur only
 - [ ] Sunday is a holiday for Athani only
 - [ ] Sunday is NOT a holiday for either branch
+
+**Details:** Athani branch operates every day including Sunday (10 AM - 5 PM). Ainapur is closed on Sundays.
 
 ---
 
@@ -30,17 +51,17 @@ The following items **materially affect implementation** and require explicit cl
 
 **Impact:** Determines which days are available for appointment requests at each location, calendar configuration, and branch-specific scheduling logic.
 
-**Status:** ⏳ **UNRESOLVED** — Awaiting clinic confirmation
+**Status:** ✅ **CONFIRMED**
 
-**Clinic Input Required:**
-- [ ] Athani operates 7 days a week (no weekly holidays)
+**Clinic Confirmation:**
+- [x] Athani operates 7 days a week (no weekly holidays)
 - [ ] Athani operates 6 days a week with holiday on: ________
 - [ ] Athani operates specific days only: ________
 - [ ] Athani has different operating days than Ainapur
 
-**Additional Details:**
-- Operating hours for Athani: ________ to ________
-- Operating hours for Ainapur: ________ to ________
+**Confirmed Details:**
+- Operating hours for Athani: **10:00 AM to 5:00 PM** (7 days a week)
+- Operating hours for Ainapur: **6:00 PM to 8:30 PM** (Monday-Saturday, closed Sundays)
 
 ---
 
@@ -181,13 +202,15 @@ The following items **materially affect implementation** and require explicit cl
 
 **Impact:** Determines internationalization (i18n) setup, translation effort, content review process, and launch timeline.
 
-**Status:** ⏳ **UNRESOLVED** — Awaiting clinic confirmation
+**Status:** ✅ **CONFIRMED**
 
-**Clinic Input Required:**
+**Clinic Confirmation:**
 - [ ] English only at launch
-- [ ] English and Kannada at launch
+- [x] English and Kannada at launch
 - [ ] English first, Kannada in Phase 2
 - [ ] Other language(s): __________
+
+**Details:** Website will support both English and Kannada languages at launch.
 
 **Content Translation:**
 - [ ] Clinic will provide Kannada translations
@@ -201,10 +224,10 @@ The following items **materially affect implementation** and require explicit cl
 
 **Impact:** Determines admin UI complexity, database schema, and flexibility for special closures (holidays, training days, emergencies).
 
-**Status:** ⏳ **UNRESOLVED** — Awaiting clinic confirmation
+**Status:** ✅ **CONFIRMED**
 
-**Clinic Input Required:**
-- [ ] Admin can add/edit/delete holidays without developer involvement
+**Clinic Confirmation:**
+- [x] Admin can add/edit/delete holidays without developer involvement
   - Holiday reasons (e.g., "Diwali", "Staff Training", "Temporary Closure")
   - Per-branch holidays or clinic-wide only
   - Recurring holidays or one-time only
@@ -213,8 +236,10 @@ The following items **materially affect implementation** and require explicit cl
 
 - [ ] Hybrid: Recurring holidays are configured by admin; special closures require developer approval
 
+**Details:** Clinic will manage national holidays and special closures via admin configuration (no developer involvement needed).
+
 **Known Annual Holidays (for reference):**
-- List any permanent annual holidays: __________
+- National holidays as per admin configuration
 
 ---
 
