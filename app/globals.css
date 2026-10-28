@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #071535;
+  --color-navy-900: #0b1f4b;
+  --color-navy-700: #1b3a78;
+  --color-brand-600: #1666a6;
+  --color-brand-100: #e3f0fa;
+  --color-brand-50: #f2f8fd;
+  --color-accent-500: #f39222;
+  --color-accent-100: #fdebd6;
+  --color-ink: #13203a;
+  --color-muted: #4a5670;
+  --color-line: #d6dfeb;
+
+  --font-sans: var(--font-noto-sans), var(--font-noto-sans-kannada), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+  }
+
+  /* Kannada script needs a little more line height to avoid clipped vowel signs. */
+  html[lang="kn"] body {
+    line-height: 1.75;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-accent-500);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}

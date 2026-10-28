@@ -1,0 +1,117 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { BranchCard } from "@/components/branch-card";
+import { ContactButtons } from "@/components/contact-buttons";
+import { ToothIcon } from "@/components/icons";
+import { BRANCH_IDS, FEATURED_SERVICES } from "@/lib/clinic";
+import { alternates, localePath } from "@/lib/site";
+import { getDictionary, getLocale } from "./dictionaries";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const dict = await getDictionary();
+  return {
+    title: { absolute: dict.meta.homeTitle },
+    description: dict.meta.homeDescription,
+    alternates: alternates(await getLocale()),
+  };
+}
+
+export default async function HomePage() {
+  const dict = await getDictionary();
+  const locale = await getLocale();
+
+  return (
+    <>
+      <section className="bg-gradient-to-br from-navy-950 via-navy-900 to-navy-700 text-white">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.2fr_1fr] md:py-20">
+          <div>
+            <p className="font-semibold uppercase tracking-wider text-accent-500">{dict.clinic.tagline}</p>
+            <h1 className="mt-3 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">{dict.clinic.name}</h1>
+            <p className="mt-4 text-lg text-white/90">{dict.home.intro}</p>
+            <p className="mt-4 text-white/90">
+              <span className="font-semibold text-white">{dict.doctor.name}</span>, {dict.doctor.qualifications}
+              <br />
+              {dict.doctor.designation}
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                href={localePath(locale, "/contact")}
+                className="inline-flex min-h-12 items-center rounded-lg bg-accent-500 px-6 text-lg font-bold text-navy-950 hover:bg-accent-500/90"
+              >
+                {dict.actions.requestAppointment}
+              </Link>
+            </div>
+          </div>
+          <div className="mx-auto w-full max-w-sm">
+            <Image
+              src="/images/dr-lakkappa-ganiger.jpg"
+              alt={dict.doctor.photoAlt}
+              width={616}
+              height={632}
+              priority
+              sizes="(min-width: 768px) 384px, 90vw"
+              className="rounded-2xl border-4 border-white/20 shadow-2xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="branches-heading" className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+        <h2 id="branches-heading" className="text-2xl font-bold text-navy-900 sm:text-3xl">
+          {dict.home.branchesHeading}
+        </h2>
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          {BRANCH_IDS.map((id) => (
+            <BranchCard key={id} dict={dict} branch={id} />
+          ))}
+        </div>
+      </section>
+
+      <section aria-labelledby="services-heading" className="bg-brand-50">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+          <h2 id="services-heading" className="text-2xl font-bold text-navy-900 sm:text-3xl">
+            {dict.home.servicesHeading}
+          </h2>
+          <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {FEATURED_SERVICES.map((id) => (
+              <li key={id} className="flex items-center gap-3 rounded-xl bg-white p-4 font-semibold text-navy-900 shadow-sm">
+                <ToothIcon className="h-6 w-6 shrink-0 text-accent-500" />
+                {dict.serviceNames[id]}
+              </li>
+            ))}
+          </ul>
+          <Link
+            href={localePath(locale, "/services")}
+            className="mt-6 inline-flex min-h-11 items-center font-semibold text-brand-600 underline underline-offset-4 hover:text-navy-900"
+          >
+            {dict.actions.viewAllServices} →
+          </Link>
+        </div>
+      </section>
+
+      <section aria-labelledby="doctor-heading" className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+        <h2 id="doctor-heading" className="text-2xl font-bold text-navy-900 sm:text-3xl">
+          {dict.home.doctorHeading}
+        </h2>
+        <p className="mt-4 max-w-3xl text-lg">{dict.doctor.bio}</p>
+        <Link
+          href={localePath(locale, "/about")}
+          className="mt-4 inline-flex min-h-11 items-center font-semibold text-brand-600 underline underline-offset-4 hover:text-navy-900"
+        >
+          {dict.actions.aboutDoctor} →
+        </Link>
+      </section>
+
+      <section aria-labelledby="cta-heading" className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="rounded-2xl bg-accent-100 p-6 sm:p-10">
+          <h2 id="cta-heading" className="text-2xl font-bold text-navy-900">
+            {dict.home.ctaHeading}
+          </h2>
+          <p className="mt-2 max-w-2xl">{dict.home.ctaBody}</p>
+          <ContactButtons dict={dict} className="mt-6" />
+        </div>
+      </section>
+    </>
+  );
+}

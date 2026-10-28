@@ -1,193 +1,83 @@
-# Asset Mapping & Reference Guide
-## Dr. Ganiger's Multispeciality Dental Clinic & Implant Center
+# Asset Mapping & Verified Clinic Facts
 
-**Last Updated:** 2026-10-28  
-**Status:** ✅ Assets Collected and Organized
+Source of truth for website content. Everything here was read directly from the files in `assets/reference/`
+or confirmed by the clinic in conversation. Do not publish anything not listed here without clinic confirmation.
 
----
+## Reference files (`assets/reference/`)
 
-## Doctor Information
+| File | Contents |
+|------|----------|
+| `clinic-logo.jpeg` | Circular "Dr. Ganiger's Dental Clinic" GDC logo, tagline "Excellence in Every Smile" (1031×1024, JPEG with white background) |
+| `doctor-portrait-poster.jpeg` | Poster with doctor portrait, short bio, both branch addresses, phone 9448932092, email, social icons |
+| `visiting-card-bilingual.jpeg` | Bilingual (EN/KN) visiting card + prescription pad layout; full service list; both phone numbers |
+| `services-poster-en-1.jpeg`, `services-poster-en-2.jpeg` | English treatment posters (20 services) |
+| `services-poster-kn-1.jpeg`, `-kn-2`, `-kn-3`, `-kn-pair` | Kannada treatment posters (12 services, official Kannada wording) |
 
-### Dr. Lakkappa S Ganiger
-- **Qualifications:** BDS, MDS
-- **Specialization:** Prosthodontist & Oral Implantologist
-- **Photo:** ✅ Available (reference/doctor-profile.jpeg)
+## Asset gaps (needed before launch)
 
-#### Professional Bio
-Dr. Lakkappa S Ganiger is an accomplished dental surgeon with specialization in:
-- Full Mouth Rehabilitation
-- Smile Designing
-- Crown & Bridges
-- Denture
-- Implants & Maxillofacial Prosthesis
+- **Standalone doctor portrait** — only exists embedded in posters. Crop from `doctor-portrait-poster.jpeg` for now; request the original photo for quality.
+- **Vector / transparent logo** — only a JPEG on white exists. Request SVG or PNG with transparency.
+- **Clinic interior / exterior photos** — none supplied.
+- **Social media profile URLs** — posters show Instagram/Facebook/Twitter/WhatsApp icons but no handles. Do not link until supplied.
+- The stock photos in the posters (smiling models, implant render) have unknown licensing; do not reuse.
 
-Dr. Ganiger's unwavering commitments to providing exceptional care ensures that his patients attain optimal oral health and confident, beaming smile.
+## Doctor
 
-#### Contact
-- **Primary Phone:** 9448932092
-- **Secondary Phone:** 9611739915
+- **Name:** Dr. Lakkappa S. Ganiger — Kannada: ಡಾ॥ ಲಕ್ಕಪ್ಪಾ ಶಿ. ಗಾಣಿಗೇರ
+- **Qualifications:** B.D.S., M.D.S. — Kannada: ಬಿ.ಡಿ.ಎಸ್., ಎಮ್.ಡಿ.ಎಸ್.
+- **Designation:** Prosthodontist & Oral Implantologist — Kannada: ಕೃತಕ ದಂತ ಜೋಡಣೆಯ ತಜ್ಞರು
+- **Bio (verbatim from poster):** "Dr. Lakkappa S Ganiger is an accomplished dental surgeon with specialization in full mouth
+  rehabilitation, smile designing, crown & bridges, denture, implants & maxillofacial prosthesis. Dr. Ganiger's unwavering
+  commitment to providing exceptional care ensures that his patients attain optimal oral health and a confident, beaming smile."
+
+## Clinic
+
+- **Name:** Dr. Ganiger's Multispeciality Dental Clinic & Implant Center
+- **Kannada:** ಡಾ॥ ಗಾಣಿಗೇರ ಮಲ್ಟಿಸ್ಪೆಷಾಲಿಟಿ ಡೆಂಟಲ್ ಕ್ಲಿನಿಕ್ ಮತ್ತು ಇಂಪ್ಲಾಂಟ್ ಸೆಂಟರ್
+- **Phones:** 9448932092 (primary, on every poster), 9611739915 (on visiting card only)
+- **WhatsApp:** 9448932092 (WhatsApp icon shown beside this number on the portrait poster) — confirm with clinic
 - **Email:** drlakki34@gmail.com
-- **WhatsApp:** Available on 9448932092
 
----
+| Branch | Address | Hours (confirmed by clinic) |
+|--------|---------|-----------------------------|
+| Athani (Branch 1) | Near Ambedkar Circle, Opp. Town Lake, Athani – 591 304, Dist. Belagavi | 10:00 AM – 5:00 PM, every day; closed only on national holidays |
+| Ainapur (Branch 2) | Nehru Chowk, Ainapur – 591 303, Tal. Kagawad, Dist. Belagavi | 6:00 PM – 8:30 PM, Monday–Saturday; closed Sunday |
 
-## Clinic Information
+Kannada addresses (from visiting card):
+- ಅಂಬೇಡ್ಕರ ಸರ್ಕಲ್ ಹತ್ತಿರ, ಪಟ್ಟಣದ ಕೆರೆಯ ಎದುರಿಗೆ, ಅಥಣಿ – 591 304, ಜಿ. ಬೆಳಗಾವಿ
+- ನೆಹರು ಚೌಕ, ಐನಾಪೂರ – 591 303, ತಾ. ಕಾಗವಾಡ, ಜಿ. ಬೆಳಗಾವಿ
 
-### Branch 1: Athani
-- **Location:** Near Ambedkar Circle, Opp. Town Lake
-- **Address:** ATHANI - 591 304, Dist. Belagavi
-- **Hours:** 10:00 AM - 5:00 PM (7 days/week)
-- **Phone:** 9448932092
-- **WhatsApp:** Yes
+## Services (English posters / visiting card)
 
-### Branch 2: Ainapur (Nehru Chowk)
-- **Location:** Nehru Chowk
-- **Address:** AINAPUR - 591 303, Tal. Kagawad, Dist. Belagavi
-- **Hours:** 6:00 PM - 8:30 PM (Closed Sundays)
-- **Phone:** 9448932092
-- **WhatsApp:** Yes
+1. Dental X-Ray
+2. Tooth Extractions
+3. Tooth Coloured Fillings / Restorations
+4. Periodontal Surgeries (Gum Surgery)
+5. Root Canal Treatment (RCT)
+6. Crown & Bridges
+7. Dentures (Fixed & Removable)
+8. Smile Designing
+9. Teeth Whitening
+10. Dentistry for Children
+11. Implants
+12. Laser Treatment
+13. Cleaning & Polishing of Teeth
+14. Habit Breaking Appliances
+15. Brackets & Braces (Tooth Alignment)
+16. Removal of Wisdom Tooth (Impaction)
+17. Precancer & Cancer Detection
+18. Full Mouth Rehabilitation
+19. Maxillofacial Prosthesis (Eye, Nose, Ear & Missing Oral Part)
 
----
+Kannada names from the Kannada posters (12 of the above):
+ಹಲ್ಲಿನ ಡಿಜಿಟಲ್ ಎಕ್ಸರೇ · ಹಲ್ಲು ಕೀಳುವುದು ಮತ್ತು ಶಸ್ತ್ರಚಿಕಿತ್ಸೆ · ಹುಳುಕು ಹಲ್ಲು ತುಂಬುವುದು · ವಸಡಿನ ಶಸ್ತ್ರಚಿಕಿತ್ಸೆ ·
+ರೂಟಕೆನಾಲ · ವಕ್ರ / ಉಬ್ಬು ಹಲ್ಲುಗಳಿಗೆ ತಂತಿ ಚಿಕಿತ್ಸೆ · ಹಲ್ಲುಗಳ ಸೆಟ್ ಮತ್ತು ಬ್ರಿಡ್ಜಗಳು · ಹಲ್ಲು ಬೆಳ್ಳಗಾಗಿಸುವುದು ·
+ಚಿಕ್ಕ ಮಕ್ಕಳ ಹಲ್ಲಿನ ಚಿಕಿತ್ಸೆ · ಲೇಸರ್ ಚಿಕಿತ್ಸೆ · ಇಂಪ್ಲಾಂಟ್ · ಬಾಯಿಯ ಕ್ಯಾನ್ಸರ ತಪಾಸಣೆ
 
-## Visual Identity & Branding
+The remaining 7 Kannada service names need a translation reviewed by the clinic.
 
-### Clinic Logo
-- **File:** Reference images in assets/reference/
-- **Colors:** Navy Blue (#003D7A or similar), Orange (#FF9F1C or similar)
-- **Icon:** Tooth with hand (care/professional)
-- **Tagline:** "Excellence in Every Smile"
-- **Status:** ✅ Available
+## Brand
 
-### Color Palette
-- **Primary:** Navy Blue (#003D7A, #0052CC)
-- **Accent:** Orange (#FF9F1C, #FF7A00)
-- **Secondary:** Light Blue (for UI elements)
-- **Text:** Dark Navy or Black
-- **Background:** White or Light Gray
-- **Accessibility:** High contrast for readability
-
-### Typography Notes
-- Professional, clean sans-serif fonts preferred
-- Clear hierarchy for readability
-- Kannada font support required for bilingual display
-
----
-
-## Collected Assets
-
-### Reference Images (in assets/reference/)
-
-| Filename | Content | Status |
-|----------|---------|--------|
-| doctor-profile.jpeg | Dr. Ganiger professional photo | ✅ Available |
-| doctor-bio.jpeg | Doctor biography and qualifications card | ✅ Available |
-| services-brochure.jpeg | Clinic services and treatments list | ✅ Available |
-| WhatsApp Image 2026-10-28 at 8.44.54 AM.jpeg | Additional reference material | ✅ Available |
-| WhatsApp Image 2026-10-28 at 8.44.54 AM (1).jpeg | Additional reference material | ✅ Available |
-| WhatsApp Image 2026-10-28 at 8.44.55 AM.jpeg | Additional reference material | ✅ Available |
-| WhatsApp Image 2026-10-28 at 8.44.55 AM (1).jpeg | Additional reference material | ✅ Available |
-| WhatsApp Image 2026-10-28 at 8.44.55 AM (2).jpeg | Additional reference material | ✅ Available |
-| WhatsApp Image 2026-10-28 at 8.44.56 AM.jpeg | Additional reference material | ✅ Available |
-
----
-
-## Required Assets for Website
-
-### ✅ Already Available
-- [ ] Clinic Logo (circular with tooth icon)
-- [x] Doctor Photo (professional headshot)
-- [x] Doctor Bio/Qualifications
-- [x] Services/Treatments List
-- [x] Clinic Contact Information
-
-### ⏳ To Be Created/Sourced
-- [ ] Clinic Interior Photos (if available)
-- [ ] Treatment/Facility Photos
-- [ ] Reception Area Photo
-- [ ] Modern dental treatment posters (generic or custom)
-- [ ] Patient testimonial section (if applicable)
-- [ ] Google Maps Integration (for branch locations)
-
-### 📝 Text Content Needed
-- Full service descriptions (for each treatment offered)
-- Kannada translations of all content
-- Testimonials or patient success stories (if any)
-
----
-
-## Website Asset Requirements
-
-### Images to Generate/Use
-1. **Logo Usage**
-   - Header: Full color logo (primary)
-   - Favicon: Simplified tooth icon
-   - Footer: Monochrome or full color variant
-
-2. **Doctor Section**
-   - Profile photo with border/frame
-   - Qualifications badge/card
-   - Bio text with professional styling
-
-3. **Clinic Information Section**
-   - Branch location maps
-   - Operating hours display
-   - Contact cards (phone, email, WhatsApp)
-
-4. **Services Section**
-   - Service icons/illustrations
-   - Treatment category cards
-   - Procedure images (if available)
-
-5. **Appointment Request Section**
-   - Call-to-action buttons
-   - Contact form design
-   - WhatsApp button styling
-
----
-
-## Brand Guidelines Summary
-
-### Color Usage
-- **Navy Blue:** Headers, navigation, primary buttons, important text
-- **Orange:** Accents, highlights, hover states, call-to-action buttons
-- **White:** Backgrounds, card backgrounds, contrast
-- **Light Gray:** Subtle backgrounds, borders, secondary sections
-
-### Visual Style
-- Professional and trustworthy
-- Clean, modern design
-- Generous spacing
-- Clear hierarchy
-- Mobile-responsive
-- High accessibility contrast
-- Dental clinic aesthetic (clean, bright, professional)
-
-### Tone
-- Professional yet approachable
-- Trustworthy and expert
-- Warm and patient-focused
-- No medical claims or guarantees
-- Clear and transparent communication
-
----
-
-## Implementation Notes
-
-1. **Logo:** Use provided logo as primary branding element. Size responsively for mobile (min 40px height).
-2. **Doctor Photo:** Display in hero section with professional framing. Ensure good contrast for mobile.
-3. **Contact Info:** Always visible in header/footer. Prominent WhatsApp button on appointment form.
-4. **Branch Info:** Display both branches with separate operating hours clearly.
-5. **Cannada Support:** All text and UI labels must be translatable to Kannada. Plan for RTL considerations if needed.
-6. **Accessibility:** Ensure color contrast meets WCAG AA standards. All images have alt text.
-
----
-
-## Next Steps
-
-1. ✅ Logo and doctor assets confirmed
-2. ⏳ Finalize remaining asset collection (clinic photos if available)
-3. ⏳ Confirm Kannada translation approach
-4. ⏳ Create website pages and components
-5. ⏳ Implement appointment request form
-6. ⏳ Deploy website
-
+- Navy (logo ring) ≈ `#0B1F4B`, blue (tooth outline) ≈ `#1E7BC4`, orange (tooth / ring) ≈ `#F39222`, white.
+  Sampled by eye from the logo; verify against the original artwork if available.
+- Orange on white fails WCAG AA for body text; use it for accents/large text only, and navy for text and primary buttons.

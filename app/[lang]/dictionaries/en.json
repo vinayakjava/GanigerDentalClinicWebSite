@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "siteName": "Dr. Ganiger's Dental Clinic",
+    "homeTitle": "Dr. Ganiger's Multispeciality Dental Clinic & Implant Center | Athani & Ainapur",
+    "homeDescription": "Dental clinic of Dr. Lakkappa S. Ganiger, B.D.S., M.D.S., Prosthodontist & Oral Implantologist, with branches in Athani and Ainapur, Belagavi district.",
+    "aboutTitle": "About Dr. Lakkappa S. Ganiger",
+    "aboutDescription": "Dr. Lakkappa S. Ganiger, B.D.S., M.D.S., Prosthodontist & Oral Implantologist.",
+    "servicesTitle": "Dental Treatments & Facilities",
+    "servicesDescription": "Dental treatments and facilities available at Dr. Ganiger's clinics in Athani and Ainapur.",
+    "contactTitle": "Contact & Appointment Request",
+    "contactDescription": "Addresses, timings and phone numbers for the Athani and Ainapur branches, and an appointment request form.",
+    "privacyTitle": "Privacy Notice",
+    "privacyDescription": "How this website handles the information you submit."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About the Doctor",
+    "services": "Treatments",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "switchLanguage": "ಕನ್ನಡ",
+    "switchLanguageLabel": "View this page in Kannada",
+    "skipToContent": "Skip to main content",
+    "menu": "Menu",
+    "primary": "Main navigation"
+  },
+  "clinic": {
+    "name": "Dr. Ganiger's Multispeciality Dental Clinic & Implant Center",
+    "shortName": "Dr. Ganiger's",
+    "subName": "Multispeciality Dental Clinic & Implant Center",
+    "tagline": "Excellence in Every Smile",
+    "logoAlt": "Dr. Ganiger's Dental Clinic logo"
+  },
+  "doctor": {
+    "name": "Dr. Lakkappa S. Ganiger",
+    "qualifications": "B.D.S., M.D.S.",
+    "designation": "Prosthodontist & Oral Implantologist",
+    "photoAlt": "Dr. Lakkappa S. Ganiger in the clinic",
+    "bio": "Dr. Lakkappa S. Ganiger is an accomplished dental surgeon with specialisation in full mouth rehabilitation, smile designing, crown & bridges, dentures, implants and maxillofacial prosthesis. Dr. Ganiger's unwavering commitment to providing exceptional care ensures that his patients attain optimal oral health and a confident, beaming smile."
+  },
+  "branches": {
+    "athani": {
+      "name": "Athani Branch",
+      "address": "Near Ambedkar Circle, Opp. Town Lake, Athani – 591 304, Dist. Belagavi",
+      "hours": "10:00 AM – 5:00 PM",
+      "days": "Open every day (closed on national holidays)"
+    },
+    "ainapur": {
+      "name": "Ainapur Branch",
+      "address": "Nehru Chowk, Ainapur – 591 303, Tal. Kagawad, Dist. Belagavi",
+      "hours": "6:00 PM – 8:30 PM",
+      "days": "Monday to Saturday (closed on Sunday)"
+    }
+  },
+  "actions": {
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "requestAppointment": "Request an appointment",
+    "directions": "Get directions",
+    "viewAllServices": "View all treatments",
+    "aboutDoctor": "About the doctor",
+    "opensInNewTab": "(opens in a new tab)"
+  },
+  "home": {
+    "intro": "Prosthodontic, implant and general dental care at two branches in Athani and Ainapur.",
+    "branchesHeading": "Our branches & timings",
+    "servicesHeading": "Key treatments",
+    "doctorHeading": "Meet the doctor",
+    "ctaHeading": "Book a visit",
+    "ctaBody": "Call or WhatsApp us, or send an appointment request online. Our staff will contact you to confirm a time."
+  },
+  "about": {
+    "heading": "About the Doctor",
+    "specialisationsHeading": "Areas of specialisation",
+    "specialisations": [
+      "Full mouth rehabilitation",
+      "Smile designing",
+      "Crown & bridges",
+      "Dentures",
+      "Implants",
+      "Maxillofacial prosthesis"
+    ],
+    "ctaBody": "To consult Dr. Ganiger, contact either branch or send an appointment request."
+  },
+  "services": {
+    "heading": "Dental Treatments & Facilities",
+    "intro": "The following treatments and facilities are offered at Dr. Ganiger's clinic. Please contact the clinic to ask which treatment is suitable for you and at which branch it is available."
+  },
+  "serviceNames": {
+    "xray": "Dental X-Ray",
+    "extraction": "Tooth Extractions",
+    "fillings": "Tooth Coloured Fillings & Restorations",
+    "gumSurgery": "Periodontal Surgery (Gum Surgery)",
+    "rootCanal": "Root Canal Treatment (RCT)",
+    "crownBridge": "Crown & Bridges",
+    "dentures": "Dentures (Fixed & Removable)",
+    "smileDesign": "Smile Designing",
+    "whitening": "Teeth Whitening",
+    "children": "Dentistry for Children",
+    "implants": "Dental Implants",
+    "laser": "Laser Treatment",
+    "cleaning": "Cleaning & Polishing of Teeth",
+    "habitAppliances": "Habit Breaking Appliances",
+    "braces": "Brackets & Braces (Tooth Alignment)",
+    "wisdomTooth": "Removal of Wisdom Tooth (Impaction)",
+    "cancerDetection": "Precancer & Cancer Detection",
+    "fullMouthRehab": "Full Mouth Rehabilitation",
+    "maxillofacial": "Maxillofacial Prosthesis (Eye, Nose, Ear & Missing Oral Parts)"
+  },
+  "contact": {
+    "heading": "Contact & Appointments",
+    "intro": "Reach us by phone or WhatsApp, visit either branch, or send an appointment request below.",
+    "directHeading": "Phone & email",
+    "phonesLabel": "Phone",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "Email",
+    "formHeading": "Request an appointment",
+    "formIntro": "This is a request, not a confirmed booking. Clinic staff will call you to confirm the date and time."
+  },
+  "form": {
+    "optional": "optional",
+    "name": "Full name",
+    "phone": "Mobile number",
+    "phoneHint": "10-digit Indian mobile number. We will call this number to confirm.",
+    "branch": "Preferred branch",
+    "branchPlaceholder": "Select a branch",
+    "date": "Preferred date",
+    "dateHint": "We will try to match your preferred date; the clinic will confirm the final time.",
+    "message": "Reason for visit",
+    "messageHint": "A short note is enough (for example, “tooth pain” or “check-up”). Please do not share detailed medical history here.",
+    "consent": "I agree that the clinic may contact me by phone or WhatsApp about this request.",
+    "submit": "Send request",
+    "submitting": "Sending…",
+    "errorSummary": "Please correct the highlighted fields.",
+    "errorDelivery": "Sorry, we could not send your request just now. Please try again, or call or WhatsApp the clinic directly.",
+    "errorRateLimited": "Too many requests from this device. Please wait a while, or call or WhatsApp the clinic directly.",
+    "successHeading": "Request sent",
+    "successBody": "Thank you. Your appointment request has been sent to the clinic. This is not yet a confirmed booking — clinic staff will call you on the number you gave to confirm the date and time.",
+    "successWhatsapp": "Message us on WhatsApp",
+    "sendAnother": "Send another request",
+    "errors": {
+      "name_required": "Please enter your name.",
+      "name_invalid": "Please enter a valid name (2–80 characters).",
+      "phone_invalid": "Please enter a valid 10-digit mobile number.",
+      "branch_required": "Please choose a branch.",
+      "date_invalid": "Please enter a valid date.",
+      "date_past": "Please choose today or a future date.",
+      "date_too_far": "Please choose a date within the next 90 days.",
+      "date_closed": "The selected branch is closed on that day. Please choose another date.",
+      "message_too_long": "Please keep the note under 500 characters.",
+      "consent_required": "Please tick this box so the clinic can contact you."
+    }
+  },
+  "footer": {
+    "branchesHeading": "Branches & timings",
+    "contactHeading": "Contact",
+    "rights": "All rights reserved."
+  },
+  "privacy": {
+    "heading": "Privacy Notice",
+    "sections": [
+      {
+        "heading": "What we collect",
+        "body": "When you send an appointment request, we collect only your name, mobile number, preferred branch, an optional preferred date and an optional short note about the reason for your visit."
+      },
+      {
+        "heading": "How we use it",
+        "body": "Your request is sent by email to Dr. Ganiger's clinic so that staff can call you to arrange an appointment. It is not used for advertising and is not sold or shared with anyone else."
+      },
+      {
+        "heading": "Service providers",
+        "body": "The website is hosted by Vercel and requests are delivered by the email service Resend. These providers process the request only to deliver it to the clinic."
+      },
+      {
+        "heading": "Cookies",
+        "body": "This website does not use advertising or tracking cookies."
+      },
+      {
+        "heading": "Questions or deletion",
+        "body": "To ask about or delete information you have sent, contact the clinic by phone or at drlakki34@gmail.com."
+      }
+    ]
+  },
+  "notFound": {
+    "heading": "Page not found",
+    "body": "The page you are looking for does not exist.",
+    "home": "Go to the home page"
+  }
+}
