@@ -38,9 +38,9 @@
     "name": "Dr. Lakkappa S. Ganiger",
     "qualifications": "B.D.S., M.D.S.",
     "designation": "Prosthodontist & Oral Implantologist",
-    "photoAlt": "Dr. Lakkappa S. Ganiger in the clinic",
-    "treatmentRoomAlt": "Dr. Lakkappa S. Ganiger in the clinic's treatment room",
-    "deskAlt": "Dr. Lakkappa S. Ganiger at the consultation desk",
+    "photoAlt": "Dr. Lakkappa S. Ganiger at the Athani branch",
+    "treatmentRoomAlt": "Dr. Lakkappa S. Ganiger in the treatment room at the Athani branch",
+    "deskAlt": "Dr. Lakkappa S. Ganiger at the consultation desk at the Athani branch",
     "bio": "Dr. Lakkappa S. Ganiger is an accomplished dental surgeon with specialisation in full mouth rehabilitation, smile designing, crown & bridges, dentures, implants and maxillofacial prosthesis. Dr. Ganiger's unwavering commitment to providing exceptional care ensures that his patients attain optimal oral health and a confident, beaming smile."
   },
   "branches": {
@@ -76,7 +76,7 @@
   },
   "about": {
     "heading": "About the Doctor",
-    "galleryHeading": "At the clinic",
+    "galleryHeading": "At the Athani branch",
     "specialisationsHeading": "Areas of specialisation",
     "specialisations": [
       "Full mouth rehabilitation",
