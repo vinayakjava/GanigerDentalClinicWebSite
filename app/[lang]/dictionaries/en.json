@@ -86,6 +86,32 @@
       "Implants",
       "Maxillofacial prosthesis"
     ],
+    "educationHeading": "Educational qualifications",
+    "yearLabel": "Year of passing",
+    "qualifications": {
+      "sslc": "SSLC",
+      "puc": "PUC",
+      "bds": "Bachelor of Dental Surgery (B.D.S.)",
+      "mds": "Master of Dental Surgery (M.D.S.) – Prosthodontics, crown & bridge including implantology"
+    },
+    "experienceHeading": "Clinical experience",
+    "experienceSubheading": "Dental postgraduate",
+    "experience": [
+      "Rehabilitation of partial and complete edentulism",
+      "Full mouth rehabilitation",
+      "Management of temporomandibular joint (TMJ) disorders",
+      "Designing and placement of implant-supported fixed and removable prostheses",
+      "Enameloplasty and occlusal corrections",
+      "Fabrication of orofacial, maxillofacial and velopharyngeal prostheses",
+      "Fabrication of obturators in cleft palate patients"
+    ],
+    "conferencesHeading": "Conferences and conventions attended",
+    "presentationKinds": {
+      "tableClinic": "Table clinic",
+      "ePoster": "E-poster",
+      "scientificPaper": "Scientific paper"
+    },
+    "publicationsHeading": "Publications",
     "ctaBody": "To consult Dr. Ganiger, contact either branch or send an appointment request."
   },
   "services": {

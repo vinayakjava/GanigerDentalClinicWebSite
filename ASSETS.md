@@ -32,6 +32,10 @@ or confirmed by the clinic in conversation. Do not publish anything not listed h
   rehabilitation, smile designing, crown & bridges, denture, implants & maxillofacial prosthesis. Dr. Ganiger's unwavering
   commitment to providing exceptional care ensures that his patients attain optimal oral health and a confident, beaming smile."
 
+- **Education, clinical experience, conferences and publications:** supplied by the clinic on 2026-10-28; the exact
+  wording published is in `lib/doctor.ts` (names/titles) and `about.*` in the dictionaries. Obvious typos in the supplied
+  text were corrected (e.g. "conseravative", "tempero mandibular", "Allevation").
+
 ## Clinic
 
 - **Name:** Dr. Ganiger's Multispeciality Dental Clinic & Implant Center

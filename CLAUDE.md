@@ -53,7 +53,8 @@ API (e.g. `proxy.ts` replaced `middleware.ts`; `dynamicParams` is unavailable wi
 - **`proxy.ts`** redirects any path without a locale prefix to `/en/...` (or `/kn/...` when Accept-Language starts with
   `kn`). Its matcher excludes `_next`, `/images/`, icons, `sitemap.xml` and `robots.txt` — add new public paths there.
 - **Clinic facts** (phones, branch ids, closed weekdays, service ids, map queries) are in `lib/clinic.ts`; display text
-  for them is in the dictionaries keyed by those ids.
+  for them is in the dictionaries keyed by those ids. The doctor's education, conferences and publications are in
+  `lib/doctor.ts`; their proper names stay English in both locales (rendered with `lang="en"`).
 - **Appointment flow:** `components/appointment-form.tsx` (client, `useActionState`) → server action
   `app/[lang]/contact/actions.ts` → `lib/appointment.ts` (zod validation returning error *codes*, which the client maps
   to dictionary messages) → `lib/rate-limit.ts` → `lib/email.ts` (Resend, plain-text only). Dates are validated against

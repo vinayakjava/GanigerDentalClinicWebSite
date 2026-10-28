@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { ContactButtons } from "@/components/contact-buttons";
+import { CONFERENCES, EDUCATION, PUBLICATIONS } from "@/lib/doctor";
 import { alternates } from "@/lib/site";
 import { getDictionary, getLocale } from "../dictionaries";
 
@@ -48,6 +49,81 @@ export default async function AboutPage() {
           <ContactButtons dict={dict} className="mt-4" />
         </div>
       </div>
+
+      <section aria-labelledby="education-heading" className="mt-12">
+        <h2 id="education-heading" className="text-2xl font-bold text-navy-900">
+          {dict.about.educationHeading}
+        </h2>
+        <ol className="mt-6 grid gap-4 md:grid-cols-2">
+          {EDUCATION.map((item) => (
+            <li key={item.id} className="rounded-xl border border-line bg-white p-5 shadow-sm">
+              <h3 className="font-bold text-navy-900">{dict.about.qualifications[item.id]}</h3>
+              <p className="mt-1" lang="en">
+                {item.institution}
+              </p>
+              <p className="mt-2 text-sm text-muted">
+                {dict.about.yearLabel}: <span className="font-semibold text-navy-900">{item.years}</span>
+              </p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section aria-labelledby="experience-heading" className="mt-12">
+        <h2 id="experience-heading" className="text-2xl font-bold text-navy-900">
+          {dict.about.experienceHeading}
+        </h2>
+        <h3 className="mt-4 font-semibold text-brand-600">{dict.about.experienceSubheading}</h3>
+        <ul className="mt-3 grid gap-2 md:grid-cols-2">
+          {dict.about.experience.map((item) => (
+            <li key={item} className="flex gap-2">
+              <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-accent-500" aria-hidden="true" />
+              {item}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section aria-labelledby="conferences-heading" className="mt-12">
+        <h2 id="conferences-heading" className="text-2xl font-bold text-navy-900">
+          {dict.about.conferencesHeading}
+        </h2>
+        <ul className="mt-6 space-y-4">
+          {CONFERENCES.map((item) => (
+            <li key={item.event} className="border-l-4 border-accent-500 pl-4">
+              <p className="font-semibold text-navy-900" lang="en">
+                {item.event} ({item.year})
+              </p>
+              <p className="mt-1">
+                {dict.about.presentationKinds[item.kind]}: <span lang="en">“{item.title}”</span>
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section aria-labelledby="publications-heading" className="mt-12">
+        <h2 id="publications-heading" className="text-2xl font-bold text-navy-900">
+          {dict.about.publicationsHeading}
+        </h2>
+        <ul className="mt-6 space-y-3" lang="en">
+          {PUBLICATIONS.map((item) => (
+            <li key={item.title} className="flex gap-2">
+              <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-accent-500" aria-hidden="true" />
+              <span>
+                “{item.title}”
+                {"journal" in item && (
+                  <span className="text-muted">
+                    {" "}
+                    – {item.journal}
+                    {"year" in item && `, ${item.year}`}
+                  </span>
+                )}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <section aria-labelledby="gallery-heading" className="mt-12">
         <h2 id="gallery-heading" className="text-2xl font-bold text-navy-900">
