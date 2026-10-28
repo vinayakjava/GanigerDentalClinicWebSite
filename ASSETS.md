@@ -54,6 +54,9 @@ Kannada addresses (from visiting card):
 - ಅಂಬೇಡ್ಕರ ಸರ್ಕಲ್ ಹತ್ತಿರ, ಪಟ್ಟಣದ ಕೆರೆಯ ಎದುರಿಗೆ, ಅಥಣಿ – 591 304, ಜಿ. ಬೆಳಗಾವಿ
 - ನೆಹರು ಚೌಕ, ಐನಾಪೂರ – 591 303, ತಾ. ಕಾಗವಾಡ, ಜಿ. ಬೆಳಗಾವಿ
 
+- **KSDC registration (the doctor):** Karnataka State Dental Council Reg. No. 38713 A, printed on the clinic's English
+  visiting card (photo shared 2026-10-28). The same card lists Cell 9611739915 and 8618270369 and the old email
+  drlakki34@gmail.com; 8618270369 is not on the website.
 - **KPME registration (Athani establishment only):** Reg. No. BLG02049ALDEN, Karnataka Private Medical Establishments
   (Amended) Act 2018, "Dental Lab or Clinic", issued 29 Apr 2024 by the District Registration and Grievance Redressal
   Authority, Belagavi; **valid till 28 Apr 2029** — update the number on the home page when it is renewed. Certificate

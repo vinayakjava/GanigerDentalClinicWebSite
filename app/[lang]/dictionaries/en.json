@@ -69,8 +69,9 @@
   },
   "home": {
     "intro": "Prosthodontic, implant and general dental care at two branches in Athani and Ainapur.",
+    "ksdc": "Dr. Lakkappa S. Ganiger registered with the Karnataka State Dental Council (KSDC)",
     "kpme": "Athani branch registered under the Karnataka Private Medical Establishments (KPME) Act",
-    "kpmeRegLabel": "Reg. No.",
+    "regNoLabel": "Reg. No.",
     "branchesHeading": "Our branches & timings",
     "servicesHeading": "Key treatments",
     "doctorHeading": "Meet the doctor",
