@@ -61,13 +61,13 @@ export default async function HomePage() {
           </div>
           <div className="mx-auto w-full max-w-sm">
             <Image
-              src="/images/dr-ganiger-portrait.jpg"
+              src="/images/dr-ganiger-home-hero.jpg"
               alt={dict.doctor.photoAlt}
-              width={1200}
-              height={1600}
+              width={1086}
+              height={1448}
               priority
               sizes="(min-width: 768px) 384px, 90vw"
-              className="rounded-2xl border-4 border-white/20 shadow-2xl"
+              className="aspect-[3/4] w-full rounded-2xl border-4 border-white/20 object-cover shadow-2xl"
             />
           </div>
         </div>
