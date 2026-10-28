@@ -22,10 +22,10 @@ export default async function AboutPage() {
       <h1 className="text-3xl font-bold text-navy-900 sm:text-4xl">{dict.about.heading}</h1>
       <div className="mt-8 grid gap-10 md:grid-cols-[minmax(0,320px)_1fr]">
         <Image
-          src="/images/dr-ganiger-portrait.jpg"
-          alt={dict.doctor.photoAlt}
-          width={1200}
-          height={1600}
+          src="/images/dr-ganiger-blue-scrubs.jpg"
+          alt={dict.doctor.portraitAlt}
+          width={841}
+          height={1122}
           sizes="(min-width: 768px) 320px, 90vw"
           className="w-full max-w-xs rounded-2xl shadow-lg md:max-w-none"
         />
