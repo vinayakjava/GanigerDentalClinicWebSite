@@ -9,15 +9,17 @@ or confirmed by the clinic in conversation. Do not publish anything not listed h
 |------|----------|
 | `clinic-logo.jpeg` | Circular "Dr. Ganiger's Dental Clinic" GDC logo, tagline "Excellence in Every Smile" (1031×1024, JPEG with white background) |
 | `doctor-portrait-poster.jpeg` | Poster with doctor portrait, short bio, both branch addresses, phone 9448932092, email, social icons |
+| `doctor-portrait-photo.jpeg` | Supplied by the clinic 2026-10-28: doctor standing, arms crossed, at the clinic (used as main portrait) |
+| `doctor-treatment-room-photo.jpeg`, `-2` | Supplied by the clinic 2026-10-28: doctor seated in the treatment room (near-duplicates; first one used) |
+| `doctor-consultation-desk-photo.jpeg` | Supplied by the clinic 2026-10-28: doctor at the consultation desk |
 | `visiting-card-bilingual.jpeg` | Bilingual (EN/KN) visiting card + prescription pad layout; full service list; both phone numbers |
 | `services-poster-en-1.jpeg`, `services-poster-en-2.jpeg` | English treatment posters (20 services) |
 | `services-poster-kn-1.jpeg`, `-kn-2`, `-kn-3`, `-kn-pair` | Kannada treatment posters (12 services, official Kannada wording) |
 
 ## Asset gaps (needed before launch)
 
-- **Standalone doctor portrait** — only exists embedded in posters. Crop from `doctor-portrait-poster.jpeg` for now; request the original photo for quality.
 - **Vector / transparent logo** — only a JPEG on white exists. Request SVG or PNG with transparency.
-- **Clinic interior / exterior photos** — none supplied.
+- **Clinic interior / exterior photos** — only the doctor photos above (treatment room, desk); none of the building or either branch's exterior, and the photos don't say which branch they show.
 - **Social media profile URLs** — posters show Instagram/Facebook/Twitter/WhatsApp icons but no handles. Do not link until supplied.
 - The stock photos in the posters (smiling models, implant render) have unknown licensing; do not reuse.
 

@@ -45,10 +45,10 @@ export default async function HomePage() {
           </div>
           <div className="mx-auto w-full max-w-sm">
             <Image
-              src="/images/dr-lakkappa-ganiger.jpg"
+              src="/images/dr-ganiger-portrait.jpg"
               alt={dict.doctor.photoAlt}
-              width={616}
-              height={632}
+              width={1200}
+              height={1600}
               priority
               sizes="(min-width: 768px) 384px, 90vw"
               className="rounded-2xl border-4 border-white/20 shadow-2xl"
@@ -90,17 +90,30 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section aria-labelledby="doctor-heading" className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <h2 id="doctor-heading" className="text-2xl font-bold text-navy-900 sm:text-3xl">
-          {dict.home.doctorHeading}
-        </h2>
-        <p className="mt-4 max-w-3xl text-lg">{dict.doctor.bio}</p>
-        <Link
-          href={localePath(locale, "/about")}
-          className="mt-4 inline-flex min-h-11 items-center font-semibold text-brand-600 underline underline-offset-4 hover:text-navy-900"
-        >
-          {dict.actions.aboutDoctor} →
-        </Link>
+      <section
+        aria-labelledby="doctor-heading"
+        className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-[minmax(0,320px)_1fr] md:gap-12"
+      >
+        <Image
+          src="/images/dr-ganiger-treatment-room.jpg"
+          alt={dict.doctor.treatmentRoomAlt}
+          width={1200}
+          height={1600}
+          sizes="(min-width: 768px) 320px, 90vw"
+          className="mx-auto w-full max-w-xs rounded-2xl shadow-lg md:max-w-none"
+        />
+        <div>
+          <h2 id="doctor-heading" className="text-2xl font-bold text-navy-900 sm:text-3xl">
+            {dict.home.doctorHeading}
+          </h2>
+          <p className="mt-4 max-w-3xl text-lg">{dict.doctor.bio}</p>
+          <Link
+            href={localePath(locale, "/about")}
+            className="mt-4 inline-flex min-h-11 items-center font-semibold text-brand-600 underline underline-offset-4 hover:text-navy-900"
+          >
+            {dict.actions.aboutDoctor} →
+          </Link>
+        </div>
       </section>
 
       <section aria-labelledby="cta-heading" className="mx-auto max-w-6xl px-4 sm:px-6">

@@ -21,10 +21,10 @@ export default async function AboutPage() {
       <h1 className="text-3xl font-bold text-navy-900 sm:text-4xl">{dict.about.heading}</h1>
       <div className="mt-8 grid gap-10 md:grid-cols-[minmax(0,320px)_1fr]">
         <Image
-          src="/images/dr-lakkappa-ganiger.jpg"
+          src="/images/dr-ganiger-portrait.jpg"
           alt={dict.doctor.photoAlt}
-          width={616}
-          height={632}
+          width={1200}
+          height={1600}
           sizes="(min-width: 768px) 320px, 90vw"
           className="w-full max-w-xs rounded-2xl shadow-lg md:max-w-none"
         />
@@ -48,6 +48,29 @@ export default async function AboutPage() {
           <ContactButtons dict={dict} className="mt-4" />
         </div>
       </div>
+
+      <section aria-labelledby="gallery-heading" className="mt-12">
+        <h2 id="gallery-heading" className="text-2xl font-bold text-navy-900">
+          {dict.about.galleryHeading}
+        </h2>
+        <ul className="mt-6 grid max-w-4xl gap-6 sm:grid-cols-2">
+          {[
+            { src: "/images/dr-ganiger-treatment-room.jpg", alt: dict.doctor.treatmentRoomAlt },
+            { src: "/images/dr-ganiger-consultation-desk.jpg", alt: dict.doctor.deskAlt },
+          ].map((photo) => (
+            <li key={photo.src}>
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                width={1200}
+                height={1600}
+                sizes="(min-width: 896px) 436px, (min-width: 640px) 45vw, 90vw"
+                className="w-full rounded-2xl shadow-lg"
+              />
+            </li>
+          ))}
+        </ul>
+      </section>
     </div>
   );
 }
