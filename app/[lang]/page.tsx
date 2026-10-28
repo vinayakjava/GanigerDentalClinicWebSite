@@ -23,8 +23,17 @@ export default async function HomePage() {
 
   return (
     <>
-      <section className="bg-gradient-to-br from-navy-950 via-navy-900 to-navy-700 text-white">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.2fr_1fr] md:py-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-navy-950 via-navy-900 to-navy-700 text-white">
+        {/* Decorative watermark; the header already shows the logo with alt text. */}
+        <Image
+          src="/images/clinic-logo.jpg"
+          alt=""
+          width={512}
+          height={512}
+          sizes="(min-width: 768px) 640px, 120vw"
+          className="pointer-events-none absolute top-1/2 -left-1/4 w-[120vw] max-w-none -translate-y-1/2 rounded-full opacity-[0.07] md:-left-32 md:w-[40rem]"
+        />
+        <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1.2fr_1fr] md:py-20">
           <div>
             <p className="font-semibold uppercase tracking-wider text-accent-500">{dict.clinic.tagline}</p>
             <h1 className="mt-3 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">{dict.clinic.name}</h1>
