@@ -1,7 +1,7 @@
 export const PRIMARY_PHONE = "9448932092";
 export const SECONDARY_PHONE = "9611739915";
-export const WHATSAPP_PHONE = "9448932092";
-export const CLINIC_EMAIL = "drlakki34@gmail.com";
+export const WHATSAPP_PHONE = "9611739915";
+export const CLINIC_EMAIL = "lakkappaganiger34@gmail.com";
 
 export const BRANCH_IDS = ["athani", "ainapur"] as const;
 export type BranchId = (typeof BRANCH_IDS)[number];

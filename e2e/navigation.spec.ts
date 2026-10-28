@@ -106,7 +106,7 @@ test.describe("header", () => {
     const main = page.getByRole("main");
     await expect(main.locator('a[href="tel:+919448932092"]').first()).toBeVisible();
     await expect(main.locator('a[href="tel:+919611739915"]').first()).toBeVisible();
-    await expect(main.locator('a[href^="https://wa.me/919448932092"]').first()).toHaveAttribute(
+    await expect(main.locator('a[href^="https://wa.me/919611739915"]').first()).toHaveAttribute(
       "rel",
       "noopener noreferrer",
     );

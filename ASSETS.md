@@ -35,8 +35,8 @@ or confirmed by the clinic in conversation. Do not publish anything not listed h
 - **Name:** Dr. Ganiger's Multispeciality Dental Clinic & Implant Center
 - **Kannada:** ಡಾ॥ ಗಾಣಿಗೇರ ಮಲ್ಟಿಸ್ಪೆಷಾಲಿಟಿ ಡೆಂಟಲ್ ಕ್ಲಿನಿಕ್ ಮತ್ತು ಇಂಪ್ಲಾಂಟ್ ಸೆಂಟರ್
 - **Phones:** 9448932092 (primary, on every poster), 9611739915 (on visiting card only)
-- **WhatsApp:** 9448932092 (WhatsApp icon shown beside this number on the portrait poster) — confirm with clinic
-- **Email:** drlakki34@gmail.com
+- **WhatsApp:** 9611739915 (confirmed by the clinic, 2026-10-28)
+- **Email:** lakkappaganiger34@gmail.com (confirmed by the clinic, 2026-10-28; replaces drlakki34@gmail.com shown on the posters)
 
 | Branch | Address | Hours (confirmed by clinic) |
 |--------|---------|-----------------------------|
