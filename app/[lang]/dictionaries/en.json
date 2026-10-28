@@ -69,6 +69,8 @@
   },
   "home": {
     "intro": "Prosthodontic, implant and general dental care at two branches in Athani and Ainapur.",
+    "kpme": "Athani branch registered under the Karnataka Private Medical Establishments (KPME) Act",
+    "kpmeRegLabel": "Reg. No.",
     "branchesHeading": "Our branches & timings",
     "servicesHeading": "Key treatments",
     "doctorHeading": "Meet the doctor",

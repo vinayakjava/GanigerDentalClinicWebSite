@@ -2,6 +2,8 @@ export const PRIMARY_PHONE = "9611739915";
 export const SECONDARY_PHONE = "9448932092";
 export const WHATSAPP_PHONE = "9611739915";
 export const CLINIC_EMAIL = "lakkappaganiger34@gmail.com";
+// Karnataka Private Medical Establishments Act registration of the Athani establishment; valid till 28 Apr 2029.
+export const KPME_REG_NO = "BLG02049ALDEN";
 
 export const BRANCH_IDS = ["athani", "ainapur"] as const;
 export type BranchId = (typeof BRANCH_IDS)[number];

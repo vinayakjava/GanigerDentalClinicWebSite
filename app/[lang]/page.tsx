@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { BranchCard } from "@/components/branch-card";
 import { ContactButtons } from "@/components/contact-buttons";
-import { ToothIcon } from "@/components/icons";
-import { BRANCH_IDS, FEATURED_SERVICES } from "@/lib/clinic";
+import { ShieldCheckIcon, ToothIcon } from "@/components/icons";
+import { BRANCH_IDS, FEATURED_SERVICES, KPME_REG_NO } from "@/lib/clinic";
 import { alternates, localePath } from "@/lib/site";
 import { getDictionary, getLocale } from "./dictionaries";
 
@@ -33,6 +33,14 @@ export default async function HomePage() {
               <span className="font-semibold text-white">{dict.doctor.name}</span>, {dict.doctor.qualifications}
               <br />
               {dict.doctor.designation}
+            </p>
+            <p className="mt-4 inline-flex items-start gap-2 rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white/90">
+              <ShieldCheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-accent-500" />
+              <span>
+                {dict.home.kpme}
+                <br />
+                {dict.home.kpmeRegLabel}: <span className="font-semibold tracking-wide text-white">{KPME_REG_NO}</span>
+              </span>
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link

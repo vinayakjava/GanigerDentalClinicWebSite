@@ -54,6 +54,11 @@ Kannada addresses (from visiting card):
 - ಅಂಬೇಡ್ಕರ ಸರ್ಕಲ್ ಹತ್ತಿರ, ಪಟ್ಟಣದ ಕೆರೆಯ ಎದುರಿಗೆ, ಅಥಣಿ – 591 304, ಜಿ. ಬೆಳಗಾವಿ
 - ನೆಹರು ಚೌಕ, ಐನಾಪೂರ – 591 303, ತಾ. ಕಾಗವಾಡ, ಜಿ. ಬೆಳಗಾವಿ
 
+- **KPME registration (Athani establishment only):** Reg. No. BLG02049ALDEN, Karnataka Private Medical Establishments
+  (Amended) Act 2018, "Dental Lab or Clinic", issued 29 Apr 2024 by the District Registration and Grievance Redressal
+  Authority, Belagavi; **valid till 28 Apr 2029** — update the number on the home page when it is renewed. Certificate
+  photo shared by the clinic 2026-10-28 (not stored in the repo). No KPME details supplied for Ainapur.
+
 ## Services (English posters / visiting card)
 
 1. Dental X-Ray
