@@ -72,6 +72,9 @@
     "ksdc": "Dr. Lakkappa S. Ganiger registered with the Karnataka State Dental Council (KSDC)",
     "kpme": "Athani branch registered under the Karnataka Private Medical Establishments (KPME) Act",
     "regNoLabel": "Reg. No.",
+    "statsLabel": "The clinic in numbers",
+    "patientsLabel": "Patients treated",
+    "sinceLabel": "Serving patients since",
     "branchesHeading": "Our branches & timings",
     "servicesHeading": "Key treatments",
     "doctorHeading": "Meet the doctor",
@@ -80,6 +83,7 @@
   },
   "about": {
     "heading": "About the Doctor",
+    "patientsSummary": "Since the clinic opened in 2021, Dr. Ganiger has treated more than 10,000 patients.",
     "galleryHeading": "At the Athani branch",
     "specialisationsHeading": "Areas of specialisation",
     "specialisations": [

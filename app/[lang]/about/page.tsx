@@ -34,6 +34,9 @@ export default async function AboutPage() {
           <p className="mt-1 font-semibold text-brand-600">{dict.doctor.qualifications}</p>
           <p className="text-muted">{dict.doctor.designation}</p>
           <p className="mt-6 text-lg">{dict.doctor.bio}</p>
+          <p className="mt-4 rounded-lg border-l-4 border-accent-500 bg-accent-100 px-4 py-3 text-lg font-semibold text-navy-900">
+            {dict.about.patientsSummary}
+          </p>
 
           <h2 className="mt-8 text-xl font-bold text-navy-900">{dict.about.specialisationsHeading}</h2>
           <ul className="mt-3 grid gap-2 sm:grid-cols-2">

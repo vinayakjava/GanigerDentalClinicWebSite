@@ -6,6 +6,9 @@ export const CLINIC_EMAIL = "lakkappaganiger34@gmail.com";
 export const KPME_REG_NO = "BLG02049ALDEN";
 // Dr. Ganiger's Karnataka State Dental Council registration, from the clinic's visiting card.
 export const KSDC_REG_NO = "38713 A";
+// Supplied by the clinic on 2026-10-28; update the count as it grows.
+export const PATIENTS_TREATED = "10,000+";
+export const CLINIC_SINCE = "2021";
 
 export const BRANCH_IDS = ["athani", "ainapur"] as const;
 export type BranchId = (typeof BRANCH_IDS)[number];

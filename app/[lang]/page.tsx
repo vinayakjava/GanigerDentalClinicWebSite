@@ -4,7 +4,7 @@ import Link from "next/link";
 import { BranchCard } from "@/components/branch-card";
 import { ContactButtons } from "@/components/contact-buttons";
 import { ShieldCheckIcon, ToothIcon } from "@/components/icons";
-import { BRANCH_IDS, FEATURED_SERVICES, KPME_REG_NO, KSDC_REG_NO } from "@/lib/clinic";
+import { BRANCH_IDS, CLINIC_SINCE, FEATURED_SERVICES, KPME_REG_NO, KSDC_REG_NO, PATIENTS_TREATED } from "@/lib/clinic";
 import { alternates, localePath } from "@/lib/site";
 import { getDictionary, getLocale } from "./dictionaries";
 
@@ -80,6 +80,20 @@ export default async function HomePage() {
             />
           </div>
         </div>
+      </section>
+
+      <section aria-label={dict.home.statsLabel} className="border-b border-line bg-white">
+        <dl className="mx-auto grid max-w-3xl grid-cols-2 divide-x divide-line px-4 py-8 text-center sm:px-6">
+          {[
+            { label: dict.home.patientsLabel, value: PATIENTS_TREATED },
+            { label: dict.home.sinceLabel, value: CLINIC_SINCE },
+          ].map((stat) => (
+            <div key={stat.label} className="px-2">
+              <dt className="text-sm font-semibold text-muted sm:text-base">{stat.label}</dt>
+              <dd className="mt-1 text-3xl font-bold text-navy-900 sm:text-4xl">{stat.value}</dd>
+            </div>
+          ))}
+        </dl>
       </section>
 
       <section aria-labelledby="branches-heading" className="mx-auto max-w-6xl px-4 py-12 sm:px-6">

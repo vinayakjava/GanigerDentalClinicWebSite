@@ -68,6 +68,9 @@ Kannada addresses (from visiting card):
   Authority, Belagavi; **valid till 28 Apr 2029** — update the number on the home page when it is renewed. Certificate
   photo shared by the clinic 2026-10-28 (not stored in the repo). No KPME details supplied for Ainapur.
 
+- **Patients and opening year:** the clinic states it has treated 10,000+ patients over the last 6 years and started in
+  2021 (supplied 2026-10-28). Published as "10,000+ patients treated" and "since 2021" — not as "happy patients".
+
 ## Services (English posters / visiting card)
 
 1. Dental X-Ray
