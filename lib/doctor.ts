@@ -2,8 +2,6 @@
 // names are proper names and stay in English in both languages; translatable labels are in the dictionaries.
 
 export const EDUCATION = [
-  { id: "sslc", institution: "KRES High School, Ainapur", year: "2009" },
-  { id: "puc", institution: "SMPU (SDM), Dharwad", year: "2011" },
   {
     id: "bds",
     institution: "Maratha Mandal's N. G. H. Institute of Dental Sciences & Research Centre, Belgaum",

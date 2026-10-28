@@ -89,8 +89,6 @@
     "educationHeading": "Educational qualifications",
     "yearLabel": "Year of passing",
     "qualifications": {
-      "sslc": "SSLC",
-      "puc": "PUC",
       "bds": "Bachelor of Dental Surgery (B.D.S.)",
       "mds": "Master of Dental Surgery (M.D.S.) – Prosthodontics, crown & bridge including implantology"
     },
