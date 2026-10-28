@@ -50,6 +50,30 @@ export default async function AboutPage() {
         </div>
       </div>
 
+      <section
+        aria-labelledby="memorial-heading"
+        className="mt-12 grid items-center gap-6 rounded-2xl border border-line bg-brand-50 p-6 sm:grid-cols-[minmax(0,200px)_1fr] sm:p-8"
+      >
+        <Image
+          src="/images/dr-ganiger-father.jpg"
+          alt={dict.about.memorial.photoAlt}
+          width={600}
+          height={817}
+          sizes="(min-width: 640px) 200px, 60vw"
+          className="mx-auto w-full max-w-[200px] rounded-xl shadow-md"
+        />
+        <div>
+          <h2 id="memorial-heading" className="text-2xl font-bold text-navy-900">
+            {dict.about.memorial.heading}
+          </h2>
+          {dict.about.memorial.paragraphs.map((text) => (
+            <p key={text} className="mt-3 text-lg">
+              {text}
+            </p>
+          ))}
+        </div>
+      </section>
+
       <section aria-labelledby="education-heading" className="mt-12">
         <h2 id="education-heading" className="text-2xl font-bold text-navy-900">
           {dict.about.educationHeading}

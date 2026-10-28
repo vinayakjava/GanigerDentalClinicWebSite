@@ -15,6 +15,7 @@ or confirmed by the clinic in conversation. Do not publish anything not listed h
 | `doctor-blue-scrubs-photo.png` | Supplied by the clinic 2026-10-28: doctor in blue scrubs, arms crossed; not taken at either branch (another doctor's name sign in background). Replaced by `-2` below |
 | `doctor-blue-scrubs-photo-2.png` | Supplied by the clinic 2026-10-28: mirrored version of the photo above with the background name sign removed; cropped to portrait for the About page |
 | `doctor-home-blue-scrubs-photo.png` | Supplied by the clinic 2026-10-28: Athani portrait (same poster background as `doctor-portrait-photo.jpeg`) with scrubs shown in blue; the embroidery was altered to read "Oral Maxillofacial Surgery" (he is a prosthodontist). Home page hero photo, with the clinic logo composited top-right |
+| `doctor-father-photo.png` | Supplied by the clinic 2026-10-28: portrait of Dr. Ganiger's late father; About page memorial. Father's name not yet supplied |
 | `visiting-card-bilingual.jpeg` | Bilingual (EN/KN) visiting card + prescription pad layout; full service list; both phone numbers |
 | `services-poster-en-1.jpeg`, `services-poster-en-2.jpeg` | English treatment posters (20 services) |
 | `services-poster-kn-1.jpeg`, `-kn-2`, `-kn-3`, `-kn-pair` | Kannada treatment posters (12 services, official Kannada wording) |
@@ -38,6 +39,9 @@ or confirmed by the clinic in conversation. Do not publish anything not listed h
 - **Education, clinical experience, conferences and publications:** supplied by the clinic on 2026-10-28; the exact
   wording published is in `lib/doctor.ts` (names/titles) and `about.*` in the dictionaries. Obvious typos in the supplied
   text were corrected (e.g. "conseravative", "tempero mandibular", "Allevation").
+
+- **Late father (memorial on the About page):** per the clinic, Dr. Ganiger became a doctor because of his father, who
+  has passed away; the family describes his support for education as a revolution. Name and further details not supplied.
 
 ## Clinic
 
