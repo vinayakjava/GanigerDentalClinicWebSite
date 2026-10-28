@@ -12,7 +12,8 @@ or confirmed by the clinic in conversation. Do not publish anything not listed h
 | `doctor-portrait-photo.jpeg` | Supplied by the clinic 2026-10-28: doctor standing, arms crossed, at the Athani branch (main portrait on the Home page) |
 | `doctor-treatment-room-photo.jpeg`, `-2` | Supplied by the clinic 2026-10-28: doctor seated in the Athani treatment room (near-duplicates; first one used) |
 | `doctor-consultation-desk-photo.jpeg` | Supplied by the clinic 2026-10-28: doctor at the Athani consultation desk |
-| `doctor-blue-scrubs-photo.png` | Supplied by the clinic 2026-10-28: doctor in blue scrubs, arms crossed; not taken at either branch (another doctor's name sign in background). Cropped to portrait for the About page |
+| `doctor-blue-scrubs-photo.png` | Supplied by the clinic 2026-10-28: doctor in blue scrubs, arms crossed; not taken at either branch (another doctor's name sign in background). Replaced by `-2` below |
+| `doctor-blue-scrubs-photo-2.png` | Supplied by the clinic 2026-10-28: mirrored version of the photo above with the background name sign removed; cropped to portrait for the About page |
 | `visiting-card-bilingual.jpeg` | Bilingual (EN/KN) visiting card + prescription pad layout; full service list; both phone numbers |
 | `services-poster-en-1.jpeg`, `services-poster-en-2.jpeg` | English treatment posters (20 services) |
 | `services-poster-kn-1.jpeg`, `-kn-2`, `-kn-3`, `-kn-pair` | Kannada treatment posters (12 services, official Kannada wording) |
