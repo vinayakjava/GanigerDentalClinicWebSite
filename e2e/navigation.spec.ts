@@ -35,7 +35,7 @@ const PAGES = [
   { path: "", en: "Dr. Ganiger's Multispeciality Dental Clinic & Implant Center", kn: "ಡಾ॥ ಗಾಣಿಗೇರ ಮಲ್ಟಿಸ್ಪೆಷಾಲಿಟಿ ಡೆಂಟಲ್ ಕ್ಲಿನಿಕ್ ಮತ್ತು ಇಂಪ್ಲಾಂಟ್ ಸೆಂಟರ್" },
   { path: "/about", en: "About the Doctor", kn: "ವೈದ್ಯರ ಬಗ್ಗೆ" },
   { path: "/services", en: "Dental Treatments & Facilities", kn: "ಹಲ್ಲಿನ ಚಿಕಿತ್ಸೆ ಮತ್ತು ಸೌಲಭ್ಯಗಳು" },
-  { path: "/contact", en: "Contact & Appointments", kn: "ಸಂಪರ್ಕ ಮತ್ತು ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್" },
+  { path: "/contact", en: "Contact & Appointments", kn: "ಸಂಪರ್ಕ ಮತ್ತು ಅಪಾಯಿಂಟ್ಮೆಂಟ್" },
   { path: "/privacy", en: "Privacy Notice", kn: "ಗೌಪ್ಯತಾ ಸೂಚನೆ" },
   { path: "/terms", en: "Terms of Use", kn: "ಬಳಕೆಯ ನಿಯಮಗಳು" },
 ];

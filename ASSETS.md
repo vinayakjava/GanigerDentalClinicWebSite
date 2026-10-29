@@ -101,6 +101,9 @@ Kannada names from the Kannada posters (12 of the above):
 
 The remaining 7 Kannada service names need a translation reviewed by the clinic.
 
+On the website the poster spellings ಎಕ್ಸರೇ and ಕ್ಯಾನ್ಸರ are corrected to ಎಕ್ಸ್-ರೇ and ಕ್ಯಾನ್ಸರ್ (Kannada proofread
+2026-10-29); ಐನಾಪೂರ is kept as on the posters.
+
 ## Brand
 
 - Navy (logo ring) ≈ `#0B1F4B`, blue (tooth outline) ≈ `#1E7BC4`, orange (tooth / ring) ≈ `#F39222`, white.
