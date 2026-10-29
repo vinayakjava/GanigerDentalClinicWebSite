@@ -14,8 +14,8 @@ or confirmed by the clinic in conversation. Do not publish anything not listed h
 | `doctor-consultation-desk-photo.jpeg` | Supplied by the clinic 2026-10-28: doctor at the Athani consultation desk |
 | `doctor-blue-scrubs-photo.png` | Supplied by the clinic 2026-10-28: doctor in blue scrubs, arms crossed; not taken at either branch (another doctor's name sign in background). Replaced by `-2` below |
 | `doctor-blue-scrubs-photo-2.png` | Supplied by the clinic 2026-10-28: mirrored version of the photo above with the background name sign removed; cropped to portrait for the About page |
-| `doctor-home-blue-scrubs-photo.png` | Supplied by the clinic 2026-10-28: Athani portrait (same poster background as `doctor-portrait-photo.jpeg`) with scrubs shown in blue; the embroidery was altered to read "Oral Maxillofacial Surgery" (he is a prosthodontist). Home page hero photo, with the clinic logo composited top-right |
-| `doctor-father-photo.png` | Supplied by the clinic 2026-10-28: portrait of Dr. Ganiger's late father; About page memorial. Father's name not yet supplied |
+| `doctor-home-blue-scrubs-photo.png` | Supplied by the clinic 2026-10-28: Athani portrait (same poster background as `doctor-portrait-photo.jpeg`) with scrubs shown in blue; the embroidery was altered to read "Oral Maxillofacial Surgery" (he is a prosthodontist); the clinic chose on 2026-10-29 not to blur it. Home page hero photo, with the clinic logo composited top-right |
+| `doctor-father-photo.png` | Supplied by the clinic 2026-10-28: portrait of Dr. Ganiger's late father; About page memorial. Name: Shri Shivappa Ganiger (ಶ್ರೀ ಶಿವಪ್ಪಾ ಗಾಣಿಗೇರ), supplied 2026-10-29 |
 | `visiting-card-bilingual.jpeg` | Bilingual (EN/KN) visiting card + prescription pad layout; full service list; both phone numbers |
 | `services-poster-en-1.jpeg`, `services-poster-en-2.jpeg` | English treatment posters (20 services) |
 | `services-poster-kn-1.jpeg`, `-kn-2`, `-kn-3`, `-kn-pair` | Kannada treatment posters (12 services, official Kannada wording) |
@@ -41,7 +41,8 @@ or confirmed by the clinic in conversation. Do not publish anything not listed h
   text were corrected (e.g. "conseravative", "tempero mandibular", "Allevation").
 
 - **Late father (memorial on the About page):** per the clinic, Dr. Ganiger became a doctor because of his father, who
-  has passed away; the family describes his support for education as a revolution. Name and further details not supplied.
+  has passed away; the family describes his support for education as a revolution. Name: Shri Shivappa Ganiger (supplied
+  2026-10-29).
 
 ## Clinic
 
@@ -62,7 +63,7 @@ Kannada addresses (from visiting card):
 
 - **KSDC registration (the doctor):** Karnataka State Dental Council Reg. No. 38713 A, printed on the clinic's English
   visiting card (photo shared 2026-10-28). The same card lists Cell 9611739915 and 8618270369 and the old email
-  drlakki34@gmail.com; 8618270369 is not on the website.
+  drlakki34@gmail.com; the clinic chose on 2026-10-29 not to publish 8618270369.
 - **Ainapur map location:** 16.668306, 74.893957 (supplied by the clinic 2026-10-29); used for its "Get directions" link.
 - **KPME registration (Athani establishment only):** Reg. No. BLG02049ALDEN, Karnataka Private Medical Establishments
   (Amended) Act 2018, "Dental Lab or Clinic", issued 29 Apr 2024 by the District Registration and Grievance Redressal
@@ -102,7 +103,8 @@ Kannada names from the Kannada posters (12 of the above):
 The remaining 7 Kannada service names need a translation reviewed by the clinic.
 
 On the website the poster spellings ಎಕ್ಸರೇ and ಕ್ಯಾನ್ಸರ are corrected to ಎಕ್ಸ್-ರೇ and ಕ್ಯಾನ್ಸರ್ (Kannada proofread
-2026-10-29); ಐನಾಪೂರ is kept as on the posters.
+2026-10-29); ಐನಾಪೂರ is kept as on the posters. The clinic confirmed the Kannada text was reviewed by a native speaker
+(2026-10-29).
 
 ## Brand
 
