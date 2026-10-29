@@ -16,7 +16,8 @@ export type BranchId = (typeof BRANCH_IDS)[number];
 // Google Maps resolves the English addresses more reliably than the Kannada ones.
 export const BRANCH_MAP_QUERIES: Record<BranchId, string> = {
   athani: "Dr. Ganiger's Dental Clinic, Near Ambedkar Circle, Opp. Town Lake, Athani 591304, Belagavi",
-  ainapur: "Dr. Ganiger's Dental Clinic, Nehru Chowk, Ainapur 591303, Kagawad, Belagavi",
+  // Exact coordinates supplied by the clinic (2026-10-29); Google Maps pins a "lat,lng" query precisely.
+  ainapur: "16.668306,74.893957",
 };
 
 // Day indexes follow Date#getDay(): 0 = Sunday.

@@ -63,6 +63,7 @@ Kannada addresses (from visiting card):
 - **KSDC registration (the doctor):** Karnataka State Dental Council Reg. No. 38713 A, printed on the clinic's English
   visiting card (photo shared 2026-10-28). The same card lists Cell 9611739915 and 8618270369 and the old email
   drlakki34@gmail.com; 8618270369 is not on the website.
+- **Ainapur map location:** 16.668306, 74.893957 (supplied by the clinic 2026-10-29); used for its "Get directions" link.
 - **KPME registration (Athani establishment only):** Reg. No. BLG02049ALDEN, Karnataka Private Medical Establishments
   (Amended) Act 2018, "Dental Lab or Clinic", issued 29 Apr 2024 by the District Registration and Grievance Redressal
   Authority, Belagavi; **valid till 28 Apr 2029** — update the number on the home page when it is renewed. Certificate
