@@ -215,7 +215,7 @@
       },
       {
         "heading": "Service providers",
-        "body": "The website is hosted by Vercel and requests are delivered by the email service Resend. These providers process the request only to deliver it to the clinic."
+        "body": "The website is hosted by Netlify and requests are delivered by the email service Resend. These providers process the request only to deliver it to the clinic."
       },
       {
         "heading": "Cookies",
