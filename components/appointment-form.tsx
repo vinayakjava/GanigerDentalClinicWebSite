@@ -4,6 +4,7 @@ import { useActionState, useEffect, useRef, useState } from "react";
 import { submitAppointment, type AppointmentFormState } from "@/app/[lang]/contact/actions";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 import type { AppointmentField } from "@/lib/appointment";
+import { formatAppointmentWhatsapp } from "@/lib/appointment-whatsapp";
 import { BRANCH_IDS, PRIMARY_PHONE, telHref, whatsappHref, type BranchId } from "@/lib/clinic";
 import type { Locale } from "@/lib/i18n";
 
@@ -32,6 +33,24 @@ function AppointmentFormBody({ labels, branchNames, callLabel, locale, onReset }
 
   const errors = state.status === "invalid" ? state.errors : {};
   const values = state.status === "invalid" || state.status === "error" ? state.values : undefined;
+  const request = state.status === "success" || state.status === "error" ? state.request : undefined;
+  const requestWhatsappHref = request
+    ? whatsappHref(
+        formatAppointmentWhatsapp(
+          request,
+          branchNames[request.branch],
+          {
+            intro: labels.whatsappIntro,
+            name: labels.name,
+            phone: labels.phone,
+            branch: labels.branch,
+            date: labels.date,
+            message: labels.message,
+          },
+          locale,
+        ),
+      )
+    : whatsappHref();
 
   useEffect(() => {
     if (state.status === "success") successRef.current?.focus();
@@ -49,14 +68,15 @@ function AppointmentFormBody({ labels, branchNames, callLabel, locale, onReset }
           {labels.successHeading}
         </h3>
         <p className="mt-2 text-ink">{labels.successBody}</p>
+        {request && <p className="mt-3 text-ink">{labels.whatsappDetailsHint}</p>}
         <div className="mt-4 flex flex-wrap gap-3">
           <a
-            href={whatsappHref()}
+            href={requestWhatsappHref}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex min-h-11 items-center rounded-lg bg-navy-900 px-4 font-semibold text-white hover:bg-navy-700"
           >
-            {labels.successWhatsapp}
+            {request ? labels.whatsappDetailsButton : labels.successWhatsapp}
           </a>
           <button
             type="button"
@@ -114,8 +134,8 @@ function AppointmentFormBody({ labels, branchNames, callLabel, locale, onReset }
               <a className="font-semibold underline" href={telHref(PRIMARY_PHONE)}>
                 {callLabel} {PRIMARY_PHONE}
               </a>
-              <a className="font-semibold underline" href={whatsappHref()} target="_blank" rel="noopener noreferrer">
-                {labels.successWhatsapp}
+              <a className="font-semibold underline" href={requestWhatsappHref} target="_blank" rel="noopener noreferrer">
+                {labels.whatsappDetailsButton}
               </a>
             </p>
           </div>

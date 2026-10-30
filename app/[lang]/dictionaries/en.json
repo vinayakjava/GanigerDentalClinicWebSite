@@ -183,6 +183,9 @@
     "successHeading": "Request sent",
     "successBody": "Thank you. Your appointment request has been sent to the clinic. This is not yet a confirmed booking — clinic staff will call you on the number you gave to confirm the date and time.",
     "successWhatsapp": "Message us on WhatsApp",
+    "whatsappDetailsHint": "You can also send these details to the clinic on WhatsApp. The message is typed for you, just press Send.",
+    "whatsappDetailsButton": "Send details on WhatsApp",
+    "whatsappIntro": "Hello, I would like to request an appointment.",
     "sendAnother": "Send another request",
     "errors": {
       "name_required": "Please enter your name.",

@@ -5,6 +5,7 @@ import {
   validateAppointment,
   type AppointmentField,
   type AppointmentInput,
+  type AppointmentRequest,
   type FieldErrorCode,
 } from "@/lib/appointment";
 import { sendAppointmentRequest } from "@/lib/email";
@@ -13,9 +14,10 @@ import { allowRequest } from "@/lib/rate-limit";
 
 export type AppointmentFormState =
   | { status: "idle" }
-  | { status: "success" }
+  // `request` is absent only for the honeypot's fake success.
+  | { status: "success"; request?: AppointmentRequest }
   | { status: "invalid"; errors: Partial<Record<AppointmentField, FieldErrorCode>>; values: AppointmentInput }
-  | { status: "error"; reason: "delivery" | "rate_limited"; values: AppointmentInput };
+  | { status: "error"; reason: "delivery" | "rate_limited"; values: AppointmentInput; request: AppointmentRequest };
 
 const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
@@ -49,7 +51,7 @@ export async function submitAppointment(
 
   const forwardedFor = (await headers()).get("x-forwarded-for");
   const clientIp = forwardedFor?.split(",")[0]?.trim() || "unknown";
-  if (!allowRequest(clientIp)) return { status: "error", reason: "rate_limited", values };
+  if (!allowRequest(clientIp)) return { status: "error", reason: "rate_limited", values, request: result.data };
 
   const localeValue = field("locale");
   const locale = isLocale(localeValue) ? localeValue : DEFAULT_LOCALE;
@@ -59,5 +61,7 @@ export async function submitAppointment(
     receivedAt: new Date(),
   });
 
-  return delivery.ok ? { status: "success" } : { status: "error", reason: "delivery", values };
+  return delivery.ok
+    ? { status: "success", request: result.data }
+    : { status: "error", reason: "delivery", values, request: result.data };
 }

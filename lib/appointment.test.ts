@@ -6,6 +6,7 @@ import {
   type AppointmentInput,
 } from "./appointment";
 import { formatAppointmentEmail } from "./appointment-email";
+import { formatAppointmentWhatsapp } from "./appointment-whatsapp";
 import { allowRequest } from "./rate-limit";
 
 // Wednesday 28 Oct 2026, 1:30 PM IST
@@ -119,6 +120,39 @@ describe("formatAppointmentEmail", () => {
     expect(text).toContain("Reason for visit: Not given");
     expect(text).toContain("Form language: Kannada");
     expect(text).toContain("Reference: abc");
+  });
+});
+
+describe("formatAppointmentWhatsapp", () => {
+  const labels = {
+    intro: "Hello",
+    name: "Name",
+    phone: "Mobile",
+    branch: "Branch",
+    date: "Date",
+    message: "Reason",
+  };
+
+  it("lists the request details", () => {
+    const text = formatAppointmentWhatsapp(
+      { name: "Ramesh Patil", phone: "9876543210", branch: "ainapur", preferredDate: "2026-11-02", message: "Check-up" },
+      "Ainapur Branch",
+      labels,
+      "en",
+    );
+    expect(text).toBe(
+      "Hello\n\nName: Ramesh Patil\nMobile: 9876543210\nBranch: Ainapur Branch\nDate: Monday, 2 November 2026\nReason: Check-up",
+    );
+  });
+
+  it("leaves out the optional fields when they are empty", () => {
+    const text = formatAppointmentWhatsapp(
+      { name: "Ramesh Patil", phone: "9876543210", branch: "athani" },
+      "Athani Branch",
+      labels,
+      "kn",
+    );
+    expect(text).toBe("Hello\n\nName: Ramesh Patil\nMobile: 9876543210\nBranch: Athani Branch");
   });
 });
 

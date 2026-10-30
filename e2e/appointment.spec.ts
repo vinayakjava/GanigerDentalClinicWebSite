@@ -103,6 +103,16 @@ test("sends a valid request once and offers to send another", async ({ page }) =
   await expect(heading).toBeFocused();
   await expect(page.getByText(/This is not yet a confirmed booking/)).toBeVisible();
 
+  const whatsapp = new URL(
+    (await page.getByRole("link", { name: "Send details on WhatsApp" }).getAttribute("href")) ?? "",
+  );
+  expect(whatsapp.origin + whatsapp.pathname).toBe("https://wa.me/919611739915");
+  const message = whatsapp.searchParams.get("text") ?? "";
+  expect(message).toContain("Full name: Playwright Test Patient");
+  expect(message).toContain("Mobile number: 9876543210");
+  expect(message).toContain("Preferred branch: Athani Branch");
+  expect(message).toContain("Reason for visit: Check-up (automated test)");
+
   await page.getByRole("button", { name: "Send another request" }).click();
   await expect(form(page).name).toHaveValue("");
   await expect(form(page).submit).toBeEnabled();
