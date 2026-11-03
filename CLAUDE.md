@@ -68,4 +68,6 @@ API (e.g. `proxy.ts` replaced `middleware.ts`; `dynamicParams` is unavailable wi
 See `.env.example`: `NEXT_PUBLIC_SITE_URL`, `RESEND_API_KEY`, `APPOINTMENT_EMAIL_FROM`, `APPOINTMENT_EMAIL_TO`.
 Resend can only send to arbitrary inboxes from a verified domain, so a domain is a launch requirement.
 Production: Netlify (free plan) builds from GitHub `main` (vinayakjava/GanigerDentalClinicWebSite); the domain is
-`ganigerdentalclinic.in` (DNS at GoDaddy). Production env vars are set in Netlify, never committed.
+`ganigerdentalclinic.in` (DNS at GoDaddy: A `@` → 75.2.60.5, CNAME `www` → ganigerdentalclinic.netlify.app). Production
+env vars are set in Netlify, never committed. `netlify.toml` only holds the 301 from the `.netlify.app` host to the real
+domain; build settings live in the Netlify UI.

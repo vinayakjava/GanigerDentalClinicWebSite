@@ -1,0 +1,16 @@
+# Build settings stay in the Netlify UI; this file only adds redirects.
+
+# Netlify always keeps the ganigerdentalclinic.netlify.app address alive, so send visitors and search engines
+# from it to the real domain. Only this exact host matches; deploy previews
+# (deploy-preview-N--ganigerdentalclinic.netlify.app) and the www CNAME are unaffected.
+[[redirects]]
+  from = "https://ganigerdentalclinic.netlify.app/*"
+  to = "https://ganigerdentalclinic.in/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://ganigerdentalclinic.netlify.app/*"
+  to = "https://ganigerdentalclinic.in/:splat"
+  status = 301
+  force = true
